@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: cadetblue;
+    }
+#first{
+    margin: 150px;
+    padding: 80px;
+    background-color: rgb(14, 200, 207);
+    text-align: center;
+}
+#first:hover{
+    box-shadow: 20px 20px 60px;
+}
+#fir{
+    /* width: 30%; */
+    margin:0px 150px;
+    padding:40px 20px;
+    background-color: rgba(255, 255, 255, 0.571);
+    border-radius: 15px;
+}
+#but1{
+    /* padding-top: 20px; */
+    margin-top: 40px;
+    width: 20%;
+    padding: 10px 0px;
+    background-color: rgba(255, 255, 255, 0.635);
+}
+</style>
+<body >
+    <div id="first" >
+        <h1 id="fir">background-color : Blue </h1>
+    <button id="but1" onclick="change()">Click Here</button>
+</div>
+</body>
+<script>
+    arr=["red","yellow","violet","black","pink","orange","blue","brown","white","skyblue","blueviolet"]
+    let i=0;
+function change(){
+    document.getElementById("first").style.backgroundColor=arr[i];
+    document.getElementById("fir").innerText="BackgroundColor : "+arr[i];
+    i=(i+1)%arr.length;
+   
+    // ind=(ind+1)%ind.length;
+}
+</script>
+</html>
+
+
+
